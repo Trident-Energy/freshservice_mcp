@@ -11,6 +11,8 @@ requires-python = ">=3.13"
 dependencies = [
     "build>=1.2.2.post1",
     "httpx==0.28.1",
+    # GHSA-vqfr-h8mv-ghfj: enforce the fixed HTTP/1.1 parser in every install path.
+    "h11>=0.16.0",
     "mcp[cli]>=1.30.0,<2",
     "pydantic>=2.10.6",
 ]
